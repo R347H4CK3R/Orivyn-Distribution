@@ -1,0 +1,41 @@
+{
+  "name": "Orivyn Preview",
+  "identifier": "io.github.r347h4ck3r.orivyn.preview",
+  "sourceURL": "https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/source.json",
+  "apps": [
+    {
+      "name": "Orivyn",
+      "bundleIdentifier": "app.jarvisevo.ios",
+      "developerName": "R347H4CK3R",
+      "subtitle": "Private local AI, without paid tiers",
+      "localizedDescription": "An independent iPhone assistant with nine free downloadable local-model options, chat history, documents and image text recognition, voice, projects and a customizable workspace. No subscription or in-app unlocks. Optional external model endpoints are off by default and may charge separately.\n\nThis is an unsigned development preview for iOS 26+. SideStore must sign it for your device. Simulator tests passed; physical iPhone installation, memory/thermal behavior and refresh remain unverified. Models download separately and require substantial free storage. External account integrations and autonomous AI scheduling are not included in this build. Not an OpenAI product.",
+      "iconURL": "https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/icon.png",
+      "tintColor": "7558FF",
+      "permissions": [
+        {
+          "type": "microphone",
+          "usageDescription": "Orivyn uses the microphone only when you start dictation or a voice conversation."
+        },
+        {
+          "type": "speech-recognition",
+          "usageDescription": "Orivyn transcribes your speech on this iPhone when you start dictation or voice conversation."
+        },
+        {
+          "type": "camera",
+          "usageDescription": "Take a photo to attach and recognize its text on this iPhone."
+        }
+      ],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-11-12",
+          "downloadURL": "https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/Orivyn-0.1.0-build4-distribution-unsigned.ipa",
+          "size": 4192466,
+          "minOSVersion": "26.0",
+          "localizedDescription": "Build 4 development preview. 288 native and 27 UI tests passed, including real local-model download, inference and relaunch. Distribution package adds the llama.cpp MIT notice; all original application payload bytes are unchanged. Device acceptance remains pending."
+        }
+      ]
+    }
+  ],
+  "news": []
+}
