@@ -29,10 +29,11 @@
         {
           "version": "0.1.0",
           "date": "2026-11-12",
-          "downloadURL": "https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/Orivyn-0.1.0-build4-distribution-unsigned.ipa",
+          "downloadURL": "https://github.com/R347H4CK3R/Orivyn-Distribution/releases/download/orivyn-v0.1.0-build4/Orivyn-0.1.0-build4-distribution-unsigned.ipa",
           "size": 4192466,
           "minOSVersion": "26.0",
-          "localizedDescription": "Build 4 development preview. 288 native and 27 UI tests passed, including real local-model download, inference and relaunch. Distribution package adds the llama.cpp MIT notice; all original application payload bytes are unchanged. Device acceptance remains pending."
+          "localizedDescription": "Build 4 development preview. 288 native and 27 UI tests passed, including real local-model download, inference and relaunch. Distribution package adds the llama.cpp MIT notice; all original application payload bytes are unchanged. Device acceptance remains pending.",
+          "buildVersion": "4"
         }
       ]
     }

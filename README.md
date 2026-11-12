@@ -4,6 +4,12 @@ Free binary distribution only. The Orivyn application source repository remains 
 
 ## Add the source
 
+Orivyn is also available in the shared Strata catalog with the other apps:
+
+`https://raw.githubusercontent.com/R347H4CK3R/OmniForge/main/unified-source.json`
+
+The separate Orivyn-only source remains available below. Add either source; they identify the same app.
+
 In SideStore, open Sources, tap +, and paste:
 
 `https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/source.json`
@@ -13,7 +19,7 @@ Or open [Add Orivyn Preview to SideStore](sidestore://source?url=https://raw.git
 ## Current development preview
 
 - Orivyn **0.1.0, build 4**, for **iOS 26.0+**, ARM64 iPhone.
-- Download: [Orivyn-0.1.0-build4-distribution-unsigned.ipa](https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/Orivyn-0.1.0-build4-distribution-unsigned.ipa)
+- Download: [Orivyn-0.1.0-build4-distribution-unsigned.ipa](https://github.com/R347H4CK3R/Orivyn-Distribution/releases/download/orivyn-v0.1.0-build4/Orivyn-0.1.0-build4-distribution-unsigned.ipa)
 - Package size: **4,192,466 bytes**.
 - SHA-256: `196091d0989f39a01787491efcfb7d1461bbca3a2f9d26f4d82b5bc7fa12ee7d`.
 - Application identifier: `app.jarvisevo.ios`, preserved for existing Orivyn/Jarvis-EVO data. This is not the separate Jarvis/GhostAI app.
