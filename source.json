@@ -8,24 +8,19 @@
       "bundleIdentifier": "app.jarvisevo.ios",
       "developerName": "R347H4CK3R",
       "subtitle": "Private local AI, without paid tiers",
-      "localizedDescription": "An independent iPhone assistant with nine free downloadable local-model options, chat history, documents and image text recognition, voice, projects and a customizable workspace. No subscription or in-app unlocks. Optional external model endpoints are off by default and may charge separately.\n\nThis is an unsigned development preview for iOS 26+. SideStore must sign it for your device. Simulator tests passed; physical iPhone installation, memory/thermal behavior and refresh remain unverified. Models download separately and require substantial free storage. External account integrations and autonomous AI scheduling are not included in this build. Not an OpenAI product.",
+      "localizedDescription": "Independent local-first iPhone assistant with downloadable models, chat history, documents and image text recognition, voice, projects and response preferences. Build 6 adds stricter remote-stream validation and reviewed source-patch export. No subscriptions or paid app tiers; optional remote providers may charge. Unsigned iOS26 development preview; SideStore must sign it. Models download separately. Portable checks, native device compilation and IPA inspection passed. Exact-build native unit/UI tests and physical-device installation/refresh, voice, memory/thermal behavior and Files export remain unverified. General autonomous tool orchestration, broad vision and automatic cross-device sync remain unfinished. Not completed 1.0.0 or an OpenAI product.",
       "iconURL": "https://raw.githubusercontent.com/R347H4CK3R/Orivyn-Distribution/main/icon.png",
       "tintColor": "7558FF",
-      "permissions": [
-        {
-          "type": "microphone",
-          "usageDescription": "Orivyn uses the microphone only when you start dictation or a voice conversation."
-        },
-        {
-          "type": "speech-recognition",
-          "usageDescription": "Orivyn transcribes your speech on this iPhone when you start dictation or voice conversation."
-        },
-        {
-          "type": "camera",
-          "usageDescription": "Take a photo to attach and recognize its text on this iPhone."
-        }
-      ],
       "versions": [
+        {
+          "date": "2026-11-14T17:19:48Z",
+          "downloadURL": "https://github.com/R347H4CK3R/Orivyn-Distribution/releases/download/orivyn-v0.1.1-build6/Orivyn-0.1.1-build6-unsigned.ipa",
+          "size": 35042297,
+          "version": "0.1.1",
+          "buildVersion": "6",
+          "minOSVersion": "26.0",
+          "localizedDescription": "Unsigned ARM64 iPhone development preview for iOS 26+. SideStore must sign it for your account/device. This is not completed 1.0.0.\r\n\r\nIncludes the current local-assistant development candidate, with stricter remote-stream choice validation and reviewed source-patch export. Exported patches are drafts: they are not applied or tested automatically, and the base commit/blob must be checked before use. Models download separately; optional remote providers may charge.\r\n\r\nVerified for this source: 400 Foundation Swift tests, 104 JavaScript agent tests, 39 VM component tests, and 158 Python tests passed (one existing tokenizer test skipped). Native iOS Release compilation and IPA structure/resource checks passed on Xcode 26.4.1. Native unit/UI tests were not run for this exact build. Physical iPhone installation/refresh, runtime, voice, memory/thermal behavior and Files export remain unverified. General autonomous tool orchestration, broad vision and automatic cross-device sync remain unfinished.\r\n\r\nSource commit: 319d6aed0a4e7543d23f96bb2de882cf68616348. CircleCI packaging pipeline 21, job 28.\r\nIPA: Orivyn-0.1.1-build6-unsigned.ipa\r\nSize: 35,042,297 bytes\r\nSHA-256: 86adf180469d44b927cfc078adb5fcf315c5a4da9a1078f613788771640db79e\r\n\r\nRequired llama.cpp and KaTeX notices are bundled. No private source archive, signing keys, model weights or personal conversations are included. Application source remains private; automatic source archives refer only to this distribution repository. Preserve existing app data and signing identity when updating. Not an OpenAI product."
+        },
         {
           "version": "0.1.0",
           "date": "2026-11-12",
@@ -35,7 +30,16 @@
           "localizedDescription": "Build 4 development preview. 288 native and 27 UI tests passed, including real local-model download, inference and relaunch. Distribution package adds the llama.cpp MIT notice; all original application payload bytes are unchanged. Device acceptance remains pending.",
           "buildVersion": "4"
         }
-      ]
+      ],
+      "appPermissions": {
+        "privacy": {
+          "NSCameraUsageDescription": "Take a photo to attach and recognize its text on this iPhone.",
+          "NSLocalNetworkUsageDescription": "Only when you connect to your chosen plugin server, Orivyn may access that server on your local network. Chats and files are not sent automatically.",
+          "NSLocationWhenInUseUsageDescription": "Only when you tap Get current location, Orivyn asks iOS for a one-time location displayed on this screen. It is not sent to a model or server.",
+          "NSMicrophoneUsageDescription": "Orivyn uses the microphone only when you start dictation or a voice conversation.",
+          "NSSpeechRecognitionUsageDescription": "Orivyn transcribes your speech on this iPhone when you start dictation or voice conversation."
+        }
+      }
     }
   ],
   "news": []

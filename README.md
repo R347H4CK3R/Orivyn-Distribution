@@ -18,15 +18,15 @@ Or open [Add Orivyn Preview to SideStore](sidestore://source?url=https://raw.git
 
 ## Current development preview
 
-- Orivyn **0.1.0, build 4**, for **iOS 26.0+**, ARM64 iPhone.
-- Download: [Orivyn-0.1.0-build4-distribution-unsigned.ipa](https://github.com/R347H4CK3R/Orivyn-Distribution/releases/download/orivyn-v0.1.0-build4/Orivyn-0.1.0-build4-distribution-unsigned.ipa)
-- Package size: **4,192,466 bytes**.
-- SHA-256: `196091d0989f39a01787491efcfb7d1461bbca3a2f9d26f4d82b5bc7fa12ee7d`.
-- Application identifier: `app.jarvisevo.ios`, preserved for existing Orivyn/Jarvis-EVO data. This is not the separate Jarvis/GhostAI app.
+- Orivyn **0.1.1, build 6**, for **iOS 26.0+**, ARM64 iPhone.
+- [Download the development preview](https://github.com/R347H4CK3R/Orivyn-Distribution/releases/download/orivyn-v0.1.1-build6/Orivyn-0.1.1-build6-unsigned.ipa)
+- Package size: **35,042,297 bytes**.
+- SHA-256: `86adf180469d44b927cfc078adb5fcf315c5a4da9a1078f613788771640db79e`.
+- Application identifier: `app.jarvisevo.ios`, preserved for existing Orivyn data.
 
-The original candidate passed 62 package/source checks, 288 native tests and 27 UI tests on an iPhone 16 Plus simulator, including the actual default-model download, local answer and relaunch persistence. This distribution copy adds only the bundled llama.cpp MIT license. Every existing payload entry, including executable, framework, assets and Info.plist, is byte-identical to the tested candidate. Both llama.cpp and KaTeX notices are included in the IPA. No model weights, source code, test fixtures, credentials or personal conversations are included.
+Independent local-first iPhone assistant with downloadable models, chat history, documents and image text recognition, voice, projects and response preferences. Build 6 adds stricter remote-stream validation and reviewed source-patch export. No subscriptions or paid app tiers; optional remote providers may charge. Unsigned iOS26 development preview; SideStore must sign it. Models download separately. Portable checks, native device compilation and IPA inspection passed. Exact-build native unit/UI tests and physical-device installation/refresh, voice, memory/thermal behavior and Files export remain unverified. General autonomous tool orchestration, broad vision and automatic cross-device sync remain unfinished. Not completed 1.0.0 or an OpenAI product.
 
-**Not a fully device-accepted release.** Physical SideStore installation/refresh, microphone and speech behavior, offline use, large-model memory/thermal performance, and LiveContainer compatibility have not been verified. Local reminders, cross-app incoming-text staging and external account integrations are not in this preview. No background AI execution is promised.
+400 Foundation Swift, 104 JavaScript agent, 39 VM component and 158 Python tests passed; one existing tokenizer test was skipped. Native device Release compilation and IPA inspection passed for source `319d6aed0a4e7543d23f96bb2de882cf68616348`. Native unit/UI tests were not run for this exact build. Physical-device acceptance remains pending. Required llama.cpp and KaTeX notices are bundled. No private source archive, signing keys, model weights or personal conversations are included.
 
 ## Install and check
 
