@@ -10,21 +10,21 @@ Orivyn is also listed in the [Strata catalog](https://raw.githubusercontent.com/
 
 ## Current unfinished preview
 
-Orivyn **0.1.1, build 12**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
+Orivyn **0.1.1, build 13**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
 
-[Download build 12](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build12/Orivyn-0.1.1-build12-unsigned.ipa)
+[Download build 13](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build13/Orivyn-0.1.1-build13-unsigned.ipa)
 
-- Size: 37,168,551 bytes.
-- SHA-256: `9e873964337b24b03c5018158d1518f20b7d6eda892324f20aaad7c3b4f62352`.
+- Size: 37,169,284 bytes.
+- SHA-256: `90952536433c54f5b2850aeed9da3c01d5738fbf32a9798056f93647152f9cbb`.
 - Application identifier: `app.jarvisevo.ios`; preserve existing data and signing identity when updating.
-- Package source: `3cc225959b9f78865a21aef18adfb7a603ab6932`.
-- [Host snapshot checks and package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43729015018).
+- Package source: `10bb4038d23389fb215c08c34428abe0a3ecb027`.
+- [Host snapshot checks and package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43732749341).
 
-Adds conservative cleanup of recognized orphan model snapshots on the next native model load that creates a new snapshot. Live leases, installed downloads, unmarked directories and unexpected files are preserved. Separate confirmation before replacing conversation history is retained. Preserve-local remains the default. Existing native tools, local LFM vision and transcript features remain included; models download separately.
+Preserves unexpected model-recovery staging data rather than recursively deleting it. Unknown entries block recovery for inspection before live files change; normal rollback remains supported. Prior model-snapshot leases/cleanup and explicit backup replacement confirmation are retained. Preserve-local remains the default; models download separately.
 
-The exact build12 source passed 10 Darwin filesystem tests with no failures or skips, plus a synthetic process-lifetime test verifying live-lease preservation and orphan recovery after terminating only the test subprocess. The combined native runtime, Release device build and independent IPA inspection passed. These checks do not execute actual iPhone inference or verify memory-mapped model lifetime. The earlier backup change's host evidence remains separate; selected-file confirmation UI, external file-provider grants and physical-device behavior remain unverified.
+The exact build13 source passed 19 Darwin filesystem recovery tests with no failures or skips. The combined native runtime, Release device build and independent IPA inspection passed. These checks do not verify actual iPhone inference, memory-mapped model lifetime, selected-file confirmation UI, external file-provider grants, hostile concurrent writers or power-loss durability. Unexpected temporary staging names can require inspection rather than automatic recovery.
 
-General autonomy and broad vision remain unreliable; automatic live sync is disabled. Physical-device installation, signing refresh, voice and memory/thermal performance are unverified. Unmarked legacy orphan snapshots remain untouched for safety. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build12) for complete scope and evidence.
+General autonomy and broad vision remain unreliable; automatic live sync is disabled. Physical-device installation, signing refresh, voice and memory/thermal performance are unverified. Unmarked legacy orphan snapshots remain untouched for safety. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build13) for complete scope and evidence.
 
 ## Installation
 
