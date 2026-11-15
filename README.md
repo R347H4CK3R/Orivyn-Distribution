@@ -10,21 +10,21 @@ Orivyn is also listed in the [Strata catalog](https://raw.githubusercontent.com/
 
 ## Current unfinished preview
 
-Orivyn **0.1.1, build 11**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
+Orivyn **0.1.1, build 12**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
 
-[Download build 11](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build11/Orivyn-0.1.1-build11-unsigned.ipa)
+[Download build 12](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build12/Orivyn-0.1.1-build12-unsigned.ipa)
 
-- Size: 37,156,968 bytes.
-- SHA-256: `499a0a1a2c335fab62b23a0b33be5ef1407278655de5f65bf43d5c22917ab7e9`.
+- Size: 37,168,551 bytes.
+- SHA-256: `9e873964337b24b03c5018158d1518f20b7d6eda892324f20aaad7c3b4f62352`.
 - Application identifier: `app.jarvisevo.ios`; preserve existing data and signing identity when updating.
-- Package source: `3f96a41b363e3b663f69497fef4bd698fb1fa514`.
-- [Package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43723555076) and [host tests / iOS compile](https://github.com/R347H4CK3R/Orivyn/actions/runs/43722288003).
+- Package source: `3cc225959b9f78865a21aef18adfb7a603ab6932`.
+- [Host snapshot checks and package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43729015018).
 
-Adds separate confirmation before replacing conversation history. Preserve-local remains the default. Existing native tools, local LFM vision and transcript features remain included; models download separately.
+Adds conservative cleanup of recognized orphan model snapshots on the next native model load that creates a new snapshot. Live leases, installed downloads, unmarked directories and unexpected files are preserved. Separate confirmation before replacing conversation history is retained. Preserve-local remains the default. Existing native tools, local LFM vision and transcript features remain included; models download separately.
 
-The integrated source passed 152 macOS host tests with zero failures or skips, including synthetic local-file fixtures through production confirmation state, coordinated file reading and SQLite storage. This does not execute AppModel or Files UI. iOS build-for-testing compiled successfully but did not execute iOS tests. The device Release build and independent IPA inspection passed. Actual selected-file confirmation UI, external file-provider grants and physical-device behavior remain unverified.
+The exact build12 source passed 10 Darwin filesystem tests with no failures or skips, plus a synthetic process-lifetime test verifying live-lease preservation and orphan recovery after terminating only the test subprocess. The combined native runtime, Release device build and independent IPA inspection passed. These checks do not execute actual iPhone inference or verify memory-mapped model lifetime. The earlier backup change's host evidence remains separate; selected-file confirmation UI, external file-provider grants and physical-device behavior remain unverified.
 
-General autonomy and broad vision remain unreliable; automatic live sync is disabled. Physical-device installation, signing refresh, voice and memory/thermal performance are unverified. A process termination may leave a temporary model snapshot. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build11) for complete scope and evidence.
+General autonomy and broad vision remain unreliable; automatic live sync is disabled. Physical-device installation, signing refresh, voice and memory/thermal performance are unverified. Unmarked legacy orphan snapshots remain untouched for safety. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build12) for complete scope and evidence.
 
 ## Installation
 
