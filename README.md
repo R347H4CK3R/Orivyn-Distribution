@@ -10,21 +10,21 @@ Orivyn is also listed in the [Strata catalog](https://raw.githubusercontent.com/
 
 ## Current unfinished preview
 
-Orivyn **0.1.1, build 10**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
+Orivyn **0.1.1, build 11**, unsigned ARM64 IPA for **iOS 26.0+**. Your installer must sign it for your account and device.
 
-[Download build 10](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build10/Orivyn-0.1.1-build10-unsigned.ipa)
+[Download build 11](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build11/Orivyn-0.1.1-build11-unsigned.ipa)
 
-- Size: 37,141,596 bytes.
-- SHA-256: `65ca3580cbba4ea8513a4dcb0bc97e2fe67933ba13aea1ad38f039f75b282bf8`.
+- Size: 37,156,968 bytes.
+- SHA-256: `499a0a1a2c335fab62b23a0b33be5ef1407278655de5f65bf43d5c22917ab7e9`.
 - Application identifier: `app.jarvisevo.ios`; preserve existing data and signing identity when updating.
-- Package source: `40844c2d96441b8183f231fb27e8a52faa1db80c`.
-- [Package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43687359101) and [application verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43685204421).
+- Package source: `3f96a41b363e3b663f69497fef4bd698fb1fa514`.
+- [Package verification](https://github.com/R347H4CK3R/Orivyn/actions/runs/43723555076) and [host tests / iOS compile](https://github.com/R347H4CK3R/Orivyn/actions/runs/43722288003).
 
-Includes reviewed native search/read/answer for approved single-message plans, the local LFM vision option, and the history-import presentation fix. Models download separately. The native reviewed route requires the Qwen3 1.7B Q4_K_M model and explicit scope approval. Vision setup displays its model license and limitations before download.
+Adds separate confirmation before replacing conversation history. Preserve-local remains the default. Existing native tools, local LFM vision and transcript features remain included; models download separately.
 
-The unchanged application source at `03b9c5cc` passed 1,040 core tests (1,035 passed, five skipped, zero failures), one actual reviewed-model simulator test with three native decisions, and one actual LFM simulator smoke test. The final tooling-only packaging commit passed clean unsigned Release compilation, runtime provenance and IPA/resource/license verification. The full combined UI suite and generic-agent gate were not rerun for this candidate.
+The integrated source passed 152 macOS host tests with zero failures or skips, including synthetic local-file fixtures through production confirmation state, coordinated file reading and SQLite storage. This does not execute AppModel or Files UI. iOS build-for-testing compiled successfully but did not execute iOS tests. The device Release build and independent IPA inspection passed. Actual selected-file confirmation UI, external file-provider grants and physical-device behavior remain unverified.
 
-General autonomy remains unreliable; broad vision still fails a frozen counting case (9/10 synthetic cases). Automatic live sync is disabled. Physical-device installation, signing refresh, voice, memory/thermal behavior and device runtime remain unverified. A process termination may leave a temporary model snapshot. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build10) for complete scope and evidence.
+General autonomy and broad vision remain unreliable; automatic live sync is disabled. Physical-device installation, signing refresh, voice and memory/thermal performance are unverified. A process termination may leave a temporary model snapshot. This is not completed 1.0.0. See the [release notes](https://github.com/R347H4CK3R/Orivyn/releases/tag/orivyn-v0.1.1-build11) for complete scope and evidence.
 
 ## Installation
 
