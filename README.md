@@ -10,19 +10,19 @@ Orivyn is also listed in the [Strata catalog](https://raw.githubusercontent.com/
 
 ## Current unfinished preview
 
-Orivyn **0.1.1, build 8**, unsigned ARM64 IPA for **iOS 26.0+**. SideStore signs it for your account and device.
+Orivyn **0.1.1, build 9**, unsigned ARM64 IPA for **iOS 26.0+**. SideStore signs it for your account and device.
 
-[Download build 8](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build8/Orivyn-0.1.1-build8-unsigned.ipa)
+[Download build 9](https://github.com/R347H4CK3R/Orivyn/releases/download/orivyn-v0.1.1-build9/Orivyn-0.1.1-build9-unsigned.ipa)
 
-- Size: 37,072,679 bytes.
-- SHA-256: `04c2bd77eb6f807eb17c24bce6ff0a8cf88cae5d74e0e43955cba9230d01723d`.
+- Size: 41,853,828 bytes.
+- SHA-256: `0b4baf9761ea721959c97f0948b0e0aacd1f64f469d543fae36fe2c745d1fc45`.
 - Application identifier: `app.jarvisevo.ios`; preserve existing data and signing identity when updating.
-- Source: `a6c696a89a2e5a6224e220b6772b62614d30b4df`.
-- Build: https://github.com/R347H4CK3R/Orivyn/actions/runs/43660234783.
+- Source: `32ddf39174ce7afe0b026f26380b5b0d6ad66a04`.
+- Build: https://github.com/R347H4CK3R/Orivyn/actions/runs/43679464506.
 
 Includes local chat, downloadable models, reviewed read workflows, native tools and local image analysis. Models download separately. General autonomy and broad vision remain unreliable; automatic cross-device sync is unfinished and disabled. Known UI bugs include New conversation sometimes retaining the previous response. Later development changes are not included in this package.
 
-Unsigned device compilation, runtime archive validation, IPA structure/resource checks and independent identity/hash inspection passed. Native unit/UI tests were not run for this exact package. Physical-device installation, signing refresh, voice, memory/thermal behavior and runtime remain unverified. This is not completed 1.0.0.
+Unsigned device compilation, runtime archive validation, IPA structure/resource checks and independent identity/hash inspection passed. For this exact source, 1,032 native core tests executed with 5 skipped and zero failures. UI-0 passed; UI-2 and the required general-agent search/read case failed. These failures are retained and disclosed. Physical-device installation, signing refresh, voice, memory/thermal behavior and runtime remain unverified. This is not completed 1.0.0.
 
 ## Installation
 
